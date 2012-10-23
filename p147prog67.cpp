@@ -11,13 +11,12 @@ int main() {
 	
 	cout << "Enter a 4-bit Hexadecimal #. Separate each digit by a space." << endl;
 	cin >> hexNum[0] >> hexNum[1] >> hexNum [2] >> hexNum [3];
-	cout << endl;
 	
 	for (int i = 0; i < 4; i++) {
 		hexNum[i] = toupper(hexNum[i]);
 		cout << hexNum[i];
 	}
-	cout << endl;
+	cout << endl << endl;
 	
 	int carry = 0;
 	if (hexNum[3] == 'F') carry = 1;
@@ -46,3 +45,19 @@ int main() {
 	
 	return 0;
 }
+
+/*
+Enter a 4-bit Hexadecimal #. Separate each digit by a space.
+3C6F
+
+3C70
+3C71
+3C72
+3C73
+3C74
+3C75
+3C76
+3C77
+3C78
+3C79
+*/

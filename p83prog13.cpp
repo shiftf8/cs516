@@ -24,3 +24,11 @@ int main () {
 
 	return 0;
 }
+
+/*
+Enter length and width of rectangle:
+Length: 3
+Width: 9
+Area: 27
+Perimeter: 24
+*/

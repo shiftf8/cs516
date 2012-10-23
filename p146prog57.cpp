@@ -11,7 +11,12 @@ int main () {
 	
 	cout << "Enter an 8-bit binary #. Separate each digit by a space." << endl;
 	cin >> binNum[0] >> binNum[1] >> binNum[2] >> binNum[3] >> binNum[4] >> binNum[5] >> binNum[6] >> binNum[7];
-	cout << endl;
+//	cout << endl;
+
+	for (int k = 0; k < 8; k++) {
+		cout << binNum[k];
+	}
+	cout << endl << endl;
 	
 	int carry = 0;
 	for (int i = 0; i < 10; i++) {
@@ -43,3 +48,19 @@ int main () {
 	
 	return 0;
 }
+
+/*
+Enter an 8-bit binary #. Separate each digit by a space.
+01010011
+
+01010100
+01010101
+01010110
+01010111
+01011000
+01011001
+01011010
+01011011
+01011100
+01011101
+*/

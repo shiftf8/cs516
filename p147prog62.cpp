@@ -13,6 +13,8 @@ int main () {
 	cout << "Enter a decimal value to calculate." << endl;
 	cin >> dec;
 	
+	cout << dec << endl << endl;
+	
 	double carry = 0.0;
 	for (int i = 0; i < 8; i++) {
 		if (i == 0) carry = dec * 2;
@@ -35,3 +37,10 @@ int main () {
 	
 	return 0;
 }
+
+/*
+Enter a decimal value to calculate.
+0.585938
+
+Conversion ends at position binNum[6]: 10010110
+*/

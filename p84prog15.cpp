@@ -24,12 +24,31 @@ int main() {
 	
 	cout << "How many discs do you want to move?\n";
 	cin >> d;
+	cout << d << endl;
 	cout << "From which peg?\n";
 	cin >> s;
+	cout << s << endl;
 	cout << "To which peg?\n";
 	cin >> e;
+	cout << e << endl;
 	
 	Tower(d, s, e);
 	
 	return 0;
 }
+
+/*
+How many discs do you want to move?
+3
+From which peg?
+1
+To which peg?
+3
+Move disk from 1 to 3
+Move disk from 1 to 2
+Move disk from 3 to 2
+Move disk from 1 to 3
+Move disk from 2 to 1
+Move disk from 2 to 3
+Move disk from 1 to 3
+*/
