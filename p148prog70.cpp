@@ -29,8 +29,9 @@ int main() {
 		//cout << conHex[i] << " ";
 	}
 	//cout << endl;
-	
-	decNum = (4096 * conHex[0]) + (256 * conHex[1]) + (16 * conHex[2]) + conHex[3];
+
+	if (conHex[0] >=8) decNum = ((4096 * conHex[0]) + (256 * conHex[1]) + (16 * conHex[2]) + conHex[3]) - 65536;
+    else decNum = (4096 * conHex[0]) + (256 * conHex[1]) + (16 * conHex[2]) + conHex[3];
 	cout << decNum << endl;
 	return 0;
 }

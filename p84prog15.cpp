@@ -21,7 +21,7 @@ void Tower(int disc, int startPeg, int endPeg) {
 
 int main() {
 	int d, s, e;
-	
+
 	cout << "How many discs do you want to move?\n";
 	cin >> d;
 	cout << d << endl;
@@ -31,9 +31,9 @@ int main() {
 	cout << "To which peg?\n";
 	cin >> e;
 	cout << e << endl;
-	
+
 	Tower(d, s, e);
-	
+
 	return 0;
 }
 

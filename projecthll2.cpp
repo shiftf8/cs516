@@ -3,19 +3,30 @@
 //Comp 516
 
 #include <iostream>
-
 using namespace std;
 
-int main () {
-    int n;
+int main() {
+    int x, used, list[10];
+    
+    int sum(int a[], int n) {
+    //Returns the sum of the elements of a between a[0] and a[n].
+        if (n == 0) {
+    		return a[0];
+    	} else {
+    		return a[n] + sum(a, n - 1); //ra2
+    	}
+    }
+    
+	cout << "Enter an integer:\n";
+	cin >> x;
 	
-	cout << "Enter an integer: " << endl;
-	
-	cin >> n;
-	
-	cout << n << " to Hexadecimal: " << hex << n << endl;
-	cout << n << " to Decimal: " << dec << n << endl;
-	//cout << oct << n << endl;
-	
+    for(unsigned i = 0; i < x; i++){
+        list[i] += 1;
+        used++;
+    }	
+    for(unsigned i = 0; i < used; i++){
+        cout << list[i]
+    }
+
 	return 0;
 }
